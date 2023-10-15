@@ -13,7 +13,7 @@ const InputField = ({
 }) => (
   <div>
     <label htmlFor={id}>{label}</label>
-    <div className={error}>
+    <div>
       <input
         type={type || "text"}
         id={id}
@@ -26,8 +26,8 @@ const InputField = ({
           },
         })}
       />
+      <p className="error">{error?.message}</p>
     </div>
-    <p className="error">{error?.message}</p>
   </div>
 );
 
