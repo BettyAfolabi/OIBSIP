@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #b06455;
+    color: #571909;
+    margin: 4rem;
+    height: 100vh;
+}
+
+input {
+    color: "#884332";
+    font-size: 20px;
+    outline: none;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input::placeholder {
+    color: #6e1f0b;
+    font-size: 20px;
+}
+
+@media screen and (min-width:900px) {
+    body {
+        margin: 4rem 12rem;
+    }
+
+}
